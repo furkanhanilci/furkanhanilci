@@ -12,10 +12,10 @@ Languages:
 - Assembly 
 
 Hardware:
--ARM
--Arduino 
--MSP430
--ESP32
+- ARM
+- Arduino 
+- MSP430
+- ESP32
 
 <!---
 furkanhanilci/furkanhanilci is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
