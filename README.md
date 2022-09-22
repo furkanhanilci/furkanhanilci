@@ -11,6 +11,14 @@ Languages:
 - Linux 
 - Assembly 
 
+Tools:
+- MATLAB & SIMULINK 
+- Visual Stdudio
+- Proteus
+- Altium Designer 
+- Multisim 
+- Microsoft Office
+
 Hardware:
 - ARM
 - Arduino 
