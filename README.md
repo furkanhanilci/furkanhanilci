@@ -13,7 +13,7 @@ Languages:
 
 Tools:
 - MATLAB & SIMULINK 
-- Visual Stdudio
+- Visual Studio
 - Proteus
 - Altium Designer 
 - Multisim 
