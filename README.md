@@ -22,8 +22,10 @@ Tools:
 Hardware:
 - ARM
 - Arduino 
+- STM32
 - MSP430
 - ESP32
+- PIC
 
 <!---
 furkanhanilci/furkanhanilci is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
