@@ -2,7 +2,7 @@
 
 - I'am senior year student at Uludag University Department of Electrical & Electronics Engineering. I've experienced in computer science and autonomous systems.I developed lots of software and autonomous systems with using different technologies.
 
-Here's a few skills, I've been experienced in;
+Here's a few skills, I've been experienced in; 
 
 Languages:
 - C
