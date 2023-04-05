@@ -4,14 +4,14 @@
 
 Here's a few skills, I've been experienced in; 
 
-                           ~~ Languages: ~~
+Languages:
 - C
 - C++
 - Python 
 - Linux 
 - Assembly 
 
-                           ~~ Tools: ~~
+Tools: 
 - MATLAB & SIMULINK 
 - Visual Studio
 - Proteus
@@ -19,7 +19,7 @@ Here's a few skills, I've been experienced in;
 - Multisim 
 - Microsoft Office
 
-                           ~~ Hardware: ~~
+Hardware: 
 - ARM
 - Arduino 
 - STM32
