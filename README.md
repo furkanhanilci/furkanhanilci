@@ -21,8 +21,6 @@ As a senior student in the Electrical & Electronics Engineering department at Ul
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=furkanhanilci&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=furkanhanilci&" alt="furkanhanilci" /></p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=furkanhanilci" alt="furkanhanilci" /></a> </p>
-
 
 
 
