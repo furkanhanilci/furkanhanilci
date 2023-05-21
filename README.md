@@ -16,31 +16,6 @@ As a senior student in the Electrical & Electronics Engineering department at Ul
 
 
 
-Here's a few skills, I've been experienced in; 
-
-Languages:
-- C
-- C++
-- Python 
-- Linux 
-- Assembly 
-
-Tools: 
-- MATLAB & SIMULINK 
-- Visual Studio
-- Proteus
-- Altium Designer 
-- Multisim 
-- Microsoft Office
-
-Hardware: 
-- Nvidia Drive AGX Orin
-- ARM
-- Arduino 
-- STM32
-- MSP430
-- ESP32
-- PIC
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=furkanhanilci&show_icons=true&theme=transparent)
 
