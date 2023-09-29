@@ -1,6 +1,6 @@
 
 <h1 align="center">Hi 👋, This is Furkan HANİLÇİ</h1>
-<h3 align="center"> Long Term Autonomous Driving Software Engineer Intern </h3>
+<h3 align="center"> Autonomous Driving Software Engineer </h3>
 
 Throughout my academic years at Uludag University's Electrical & Electronics Engineering department, I have gained priceless hands-on experience in the domains of Electrical & Electronics Engineering, Computer Science, and Autonomous Systems. My unwavering passion for innovation has driven me to contribute to numerous project, which I meticulously designed and executed using cutting-edge tools and technologies. This has not only showcased my technical proficiency but also underscored my creative ingenuity. Notably, I had the privilege of leading the software team for a group that participated in the Combat UAV category at Teknofest 2023. Subsequently, I embarked on a journey as a Long-Term R&D Autonomous Driving Software Engineer intern at KARSAN Automotive. This internship has granted me a unique opportunity to immerse myself in the captivating realm of autonomous systems, further honing my engineering skills. Following this, I transitioned to the role of an Autonomous Driving Software Engineer at KARSAN Automotive. In my current role, I find the inspiration to step into the continually evolving landscape of autonomous systems and drive the autonomous driving industry forward.
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=furkanhanilci&label=Profile%20views&color=0e75b6&style=flat" alt="furkanhanilci" /> </p>
