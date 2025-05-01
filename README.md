@@ -32,6 +32,10 @@ Inspired by the belief that true progress involves pushing the boundaries of wha
   </a>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=furkanhanilci&label=Profile%20views&color=0e75b6&style=flat" alt="furkanhanilci" />
+</p>
+
 
 ---
 
@@ -50,7 +54,3 @@ Inspired by the belief that true progress involves pushing the boundaries of wha
 
 
 ---
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=furkanhanilci&label=Profile%20views&color=0e75b6&style=flat" alt="furkanhanilci" />
-</p>
