@@ -1,5 +1,8 @@
 <!-- profile intro animation -->
-<h1 align="center">Hi 👋, I'm Furkan Hanilçi</h1>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=5&pause=5&center=true&width=1000&lines=Furkan+Hanilçi"
+       alt="Typing SVG" />
+</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=1000&center=true&width=460&lines=Autonomous+Driving+Software+Engineer;AI+Researcher"
