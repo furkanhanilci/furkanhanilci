@@ -2,28 +2,25 @@ name: Generate 3D Contribution Graph (Night-Rainbow)
 
 on:
   schedule:
-    - cron:  '0 0 * * *'        # her gün UTC 00:00
-  workflow_dispatch:            # elle tetiklemeye de izin ver
+    - cron: '0 0 * * *'      # her gün
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-    # 1) Depoyu klonla
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    # 2) Grafiği oluştur
-    - name: Build graph
-      uses: yoshi389111/github-profile-3d-contrib@v1
-      with:
-        username: furkanhanilci
-        output: ./profile-3d-contrib/night-rainbow.png
-        config: night-rainbow      # tema
+      - name: Build graph
+        uses: yoshi389111/github-profile-3d-contrib@v2      # <-- DÜZELTİLDİ
+        with:
+          username: furkanhanilci
+          output: ./profile-3d-contrib/night-rainbow.png
+          config: night-rainbow
 
-    # 3) PNG dosyasını commitle
-    - name: Commit & push image
-      uses: EndBug/add-and-commit@v9
-      with:
-        add:    profile-3d-contrib/night-rainbow.png
-        message: "Update night-rainbow contribution graph"
+      - name: Commit & push image
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: profile-3d-contrib/night-rainbow.png
+          message: "Update night-rainbow contribution graph"
