@@ -96,20 +96,20 @@ I’m an Autonomous Driving Software Engineer at KARSAN Automotive, holding a de
   <img
     src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=furkanhanilci&theme=2077"
     alt="Stats"
-    width="25%"
+    width="30%"
     
   
   <img
     src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=furkanhanilci&theme=2077"
     alt="Profile Details"
-    width="50%"
+    width="60%"
   />
 </p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/furkanhanilci/furkanhanilci/main/profile-3d-contrib/profile-night-rainbow.svg"
        alt="Night-Rainbow Contribution Graph"
-       width="720" />
+       width="750" />
 </p>
 
  
