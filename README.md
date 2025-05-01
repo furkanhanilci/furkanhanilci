@@ -98,7 +98,7 @@ I’m an Autonomous Driving Software Engineer at KARSAN Automotive, holding a de
     alt="Stats"
     width="25%"
     
-  />
+  
   <img
     src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=furkanhanilci&theme=2077"
     alt="Profile Details"
