@@ -20,11 +20,18 @@ Currently, as an Autonomous Driving Software Engineer at KARSAN Automotive, I am
 
 Inspired by the belief that true progress involves pushing the boundaries of what we believe to be possible, I am continually propelled to seek new frontiers in technology and innovation. The essence of success lies not just in knowledge but in the imagination and creativity we bring to solving complex problems. This philosophy fuels my journey, inspiring me to innovate relentlessly and approach every challenge with a fresh perspective.
 
-
-
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=furkanhanilci&show_icons=true&theme=tokyonight" width="35%"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=furkanhanilci&layout=compact&theme=tokyonight" width="35%"/>
+  <img
+    src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=furkanhanilci&theme=2077"
+    alt="Stats"
+    width="25%"
+    
+  />
+  <img
+    src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=furkanhanilci&theme=2077"
+    alt="Profile Details"
+    width="50%"
+  />
 </p>
 
 <p align="center">
