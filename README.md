@@ -6,6 +6,10 @@ I am a software engineer at KARSAN Automotive, specialized in autonomous vehicle
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=furkanhanilci&label=Profile%20views&color=0e75b6&style=flat" alt="furkanhanilci" /> </p>
 
 
+### 📊 GitHub Stats
+
+![Furkan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=furkanhanilci&show_icons=true&theme=react)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=furkanhanilci&layout=compact&theme=react)
 
 
 <!---
