@@ -10,15 +10,57 @@
        alt="Typing SVG" />
 </p>
 
+<!-- Night Owl image (or replace with your own avatar/GIF) -->
+<div>
+  <img align="right" width="40%" src="https://raw.githubusercontent.com/furkanhanilci/furkanhanilci/main/.github/Skills_Animation_White.gif" alt="Skills Animation">
+</div>
+
+<!-- Header Name -->
+# 😎 I’M FURKAN HANİLÇİ!  
+*Autonomous Driving Software Engineer / AI & RL Researcher*  
+<br/>
+
+<!-- Start Intro -->
+<p align="left">
+I’m passionate about pushing the boundaries of autonomous systems and AI. I hold a B.Sc. in Electrical & Electronics Engineering from Uludağ University and led the Combat UAV software team at Teknofest 2023. Today I develop deep reinforcement learning agents for robust decision-making and integrate large language models to automate diagnostics and enhance human–machine interaction.
+</p>
+
+- 🎓 **B.Sc. in Electrical & Electronics Engineering** (Uludağ University)  
+- 🚁 **Teknofest 2023**: Led Combat UAV software team — mission planning, flight-control software  
+- 🤖 **Deep RL**: Designing & training agents for dynamic, safety-critical environments  
+- 🗣️ **LLM Integration**: Automating diagnostics, generating adaptive test scenarios  
+- 🌱 **Lifelong Learner**: Exploring new frontiers in AI, RL & LLM research  
+- 💻 **Connect**: [GitHub](https://github.com/furkanhanilci) • [LinkedIn](https://www.linkedin.com/in/furkanhanilci/)  
+<!-- End Intro -->
 
 
-Throughout my academic journey at Uludağ University's Department of Electrical and Electronics Engineering, I immersed myself in a world where innovation and technology converge. I gained invaluable hands-on experience in Electrical and Electronics Engineering, Computer Science, and Autonomous Systems. My relentless passion for innovation drove me to contribute to numerous projects, each meticulously designed and executed with cutting-edge technology, showcasing both my technical proficiency and creative intelligence.
+<h2 align="center">Tᴇᴄʜ sᴛᴀᴄᴋ &amp; Lᴀᴛᴇsᴛ ʙʟᴏɢs</h2>
 
-I had the privilege of leading the software team for a group competing in the Combat UAV category at Teknofest 2023, a defining moment that highlighted the power of teamwork and innovation. Following this, I embarked on a transformative journey as a Long-Term R&D Autonomous Driving Software Engineer at KARSAN Automotive. This role allowed me to delve deeper into the fascinating realm of autonomous systems, refining my engineering skills and broadening my understanding of real-world applications.
+<picture>
+  <!-- Karanlık modda .github klasöründeki Dark versiyon yüklenir -->
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="./.github/Skills_Animation_Dark.gif"
+  >
+  <!-- Aydınlık modda .github klasöründeki White versiyon yüklenir -->
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="./.github/Skills_Animation_White.gif"
+  >
+  <!-- Fallback olarak Light versiyon gösterilsin -->
+  <img
+    align="left"
+    alt="Skills Animation"
+    src="./.github/Skills_Animation_White.gif"
+  >
+</picture>
+<br />
 
-Currently, as an Autonomous Driving Software Engineer at KARSAN Automotive, I am dedicated to developing advanced planning and control software for autonomous vehicles. Additionally, I am deeply involved in the field of artificial intelligence, applying AI techniques to enhance the performance and capabilities of robotic and autonomous systems. This dual focus enables me to stand at the forefront of technological advancement, driving the future of science and technology forward.
+<h3 align="left">Current Learning</h3>
+<ul align="left">
+ I’m an Autonomous Driving Software Engineer at KARSAN Automotive, holding a degree in Electrical & Electronics Engineering from Uludağ University. After leading the Combat UAV software team at Teknofest 2023—where I architected mission-planning frameworks and oversaw end-to-end flight software—I joined KARSAN’s R&D division to advance our autonomous platforms. Today, my work centers on artificial intelligence: I design and train deep reinforcement learning agents for robust decision-making in dynamic environments, and I’m pioneering the integration of large language models to automate diagnostics, generate adaptive test scenarios, and refine human–machine interfaces. By blending AI, RL and LLM technologies, I elevate autonomous and robotic systems to new levels of intelligence and adaptability.
+</ul>
 
-Inspired by the belief that true progress involves pushing the boundaries of what we believe to be possible, I am continually propelled to seek new frontiers in technology and innovation. The essence of success lies not just in knowledge but in the imagination and creativity we bring to solving complex problems. This philosophy fuels my journey, inspiring me to innovate relentlessly and approach every challenge with a fresh perspective.
 
 <p align="center">
   <img
