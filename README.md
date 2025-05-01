@@ -52,8 +52,9 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=furkanhanilci&layout=compact&theme=tokyonight" width="33.3%"/>
 </p>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=furkanhanilci&theme=react-dark" />
-
+<<p align="center">
+  <img src="https://raw.githubusercontent.com/furkanhanilci/furkanhanilci/main/profile-3d-contrib/night-rainbow.png" alt="Night Rainbow Contribution Graph" />
+</p>
 
 ---
 
