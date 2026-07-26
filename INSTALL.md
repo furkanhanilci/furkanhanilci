@@ -1,7 +1,8 @@
 # Profile dashboard maintenance
 
-The GitHub profile uses one repository-hosted SVG so the composition remains
-pixel-accurate in GitHub's sanitized README renderer.
+The GitHub profile uses repository-hosted SVG modules so the visual language of
+the original dashboard remains intact while text stays readable inside GitHub's
+fixed-width profile column.
 
 ## Files
 
@@ -10,17 +11,23 @@ README.md
 .github/assets/profile-dashboard-base.png
 .github/assets/profile-dashboard.svg
 .github/assets/profile-stats.json
+.github/assets/modules/*.svg
 .github/workflows/profile-dashboard.yml
 scripts/render-profile.mjs
 ```
 
 `profile-dashboard-base.png` is the immutable reference artwork.
-`profile-dashboard.svg` embeds that artwork and adds the live statistics layer.
+`profile-dashboard.svg` remains the full-size fallback. The `modules` directory
+contains the readable layout used by `README.md`: a full-width banner, larger
+profile copy, a separate focus-area grid, full-width project cards, separate
+technology-logo and tooling panels, and separate live metrics and language
+panels. The title uses a neon pulse, the role strip slides continuously, and
+GitHub/LinkedIn are separate linked modules.
 
 ## Automatic refresh
 
-The **Refresh profile dashboard** workflow runs daily and can also be started
-manually from the Actions tab. It calculates:
+The **Refresh profile dashboard** workflow runs every six hours and can also be
+started manually from the Actions tab. It calculates:
 
 - stars earned by original, non-archived public repositories
 - authored commits on the default branches of those repositories
@@ -47,5 +54,6 @@ Run without `--offline` and provide `GITHUB_TOKEN` to use live GitHub data.
 ## GitHub rendering limitation
 
 Arbitrary CSS, JavaScript, and coordinate-based image maps are not available in
-profile READMEs. The entire dashboard is therefore one linked SVG; this preserves
-the exact requested layout, logos, and artwork across GitHub themes.
+profile READMEs. The design therefore uses separate linked SVG modules. This
+preserves the artwork and logos, makes each project card clickable, removes
+unused side margins, and prevents GitHub from shrinking all copy into one image.

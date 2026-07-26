@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="928" height="150" viewBox="0 0 928 150" role="img" aria-labelledby="title description">
+  <title id="title">Live GitHub language distribution</title>
+  <desc id="description">Top programming languages calculated from public repository byte counts.</desc>
+  <defs>
+    <linearGradient id="panel-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020a14"/>
+      <stop offset="1" stop-color="#071421"/>
+    </linearGradient>
+    <linearGradient id="cyan-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36d6ff"/>
+      <stop offset="1" stop-color="#16324a"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .heading {
+      fill: #36d6ff;
+      font: 700 13px "Segoe UI", Inter, Arial, sans-serif;
+      letter-spacing: 2.2px;
+    }
+    .title {
+      fill: #f2f7fb;
+      font: 700 18px "Segoe UI", Inter, Arial, sans-serif;
+    }
+    .copy {
+      fill: #c7d2de;
+      font: 500 13px "Segoe UI", Inter, Arial, sans-serif;
+    }
+    .muted {
+      fill: #91a1b3;
+      font: 600 11px "Segoe UI", Inter, Arial, sans-serif;
+    }
+    .mono {
+      fill: #d8e5ef;
+      font: 500 14px "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+      letter-spacing: 0.25px;
+    }
+  </style>
+
+      <rect x="1" y="1" width="926" height="148" rx="10" fill="url(#panel-bg)" stroke="#19354d"/>
+      <text x="18" y="27" class="heading">TOP LANGUAGES</text>
+      <line x1="174" y1="22" x2="910" y2="22" stroke="url(#cyan-line)"/>
+      <rect x="48.00" y="72" width="596.80" height="14" rx="7" fill="#3aa5eb"/><rect x="644.80" y="72" width="143.78" height="14" rx="7" fill="#e94b9a"/><rect x="788.58" y="72" width="68.31" height="14" rx="7" fill="#8d60d8"/><rect x="856.89" y="72" width="15.46" height="14" rx="7" fill="#f29a38"/><rect x="872.35" y="72" width="7.65" height="14" rx="7" fill="#96a1ad"/><circle cx="52" cy="119" r="5" fill="#3aa5eb"/>
+        <text x="65" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">Python</text><circle cx="157" cy="119" r="5" fill="#e94b9a"/>
+        <text x="170" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">Jupyter</text><circle cx="262" cy="119" r="5" fill="#8d60d8"/>
+        <text x="275" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">C++</text><circle cx="367" cy="119" r="5" fill="#f29a38"/>
+        <text x="380" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">Shell</text><circle cx="472" cy="119" r="5" fill="#96a1ad"/>
+        <text x="485" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">Others</text>
+
+</svg>
