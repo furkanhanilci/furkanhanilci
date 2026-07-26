@@ -19,9 +19,10 @@ scripts/render-profile.mjs
 `profile-dashboard-base.png` is the immutable reference artwork.
 `profile-dashboard.svg` remains the full-size fallback. The `modules` directory
 contains the readable layout used by `README.md`: a full-width banner, larger
-profile copy, two-column project cards, a full-width technology panel, and a
-full-width live statistics panel. The title uses a neon pulse, the role strip
-slides continuously, and GitHub/LinkedIn are separate linked modules.
+profile copy, a separate focus-area grid, full-width project cards, separate
+technology-logo and tooling panels, and separate live metrics and language
+panels. The title uses a neon pulse, the role strip slides continuously, and
+GitHub/LinkedIn are separate linked modules.
 
 ## Automatic refresh
 

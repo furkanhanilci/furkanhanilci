@@ -353,15 +353,15 @@ function croppedArtwork(
 }
 
 function tagBadges(tags, color) {
-  let x = 116;
+  let x = 154;
   return tags
     .map((tag) => {
-      const width = Math.max(42, tag.length * 6.3 + 18);
-      const badge = `<g transform="translate(${x} 118)">
-        <rect width="${width}" height="22" rx="11" fill="${color}" fill-opacity="0.12" stroke="${color}" stroke-opacity="0.62"/>
-        <text x="${width / 2}" y="15" text-anchor="middle" fill="${color}" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="10" font-weight="700">${escapeXml(tag)}</text>
+      const width = Math.max(50, tag.length * 7.4 + 24);
+      const badge = `<g transform="translate(${x} 143)">
+        <rect width="${width}" height="27" rx="13.5" fill="${color}" fill-opacity="0.12" stroke="${color}" stroke-opacity="0.62"/>
+        <text x="${width / 2}" y="18" text-anchor="middle" fill="${color}" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="11" font-weight="700">${escapeXml(tag)}</text>
       </g>`;
-      x += width + 8;
+      x += width + 10;
       return badge;
     })
     .join("");
@@ -370,29 +370,29 @@ function tagBadges(tags, color) {
 function projectModule(embeddedImage, project) {
   const icon = croppedArtwork(embeddedImage, {
     ...project.icon,
-    x: 20,
-    y: 42,
-    width: 78,
-    height: 78,
+    x: 26,
+    y: 45,
+    width: 112,
+    height: 112,
     fit: "xMidYMid meet",
   });
   const lines = project.description
     .map(
       (line, index) =>
-        `<text x="116" y="${64 + index * 19}" class="copy">${escapeXml(line)}</text>`,
+        `<text x="154" y="${82 + index * 25}" fill="#c7d2de" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="16" font-weight="500">${escapeXml(line)}</text>`,
     )
     .join("");
 
   return svgDocument({
-    width: 448,
-    height: 152,
+    width: 928,
+    height: 188,
     title: project.title,
     description: project.description.join(" "),
     body: `
-      ${panelBackdrop(448, 152)}
-      <rect x="1" y="1" width="446" height="4" rx="2" fill="${project.color}" fill-opacity="0.75"/>
+      ${panelBackdrop(928, 188)}
+      <rect x="1" y="1" width="926" height="5" rx="2.5" fill="${project.color}" fill-opacity="0.75"/>
       ${icon}
-      <text x="116" y="37" class="title">${escapeXml(project.title)}</text>
+      <text x="154" y="46" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="24" font-weight="700">${escapeXml(project.title)}</text>
       ${lines}
       ${tagBadges(project.tags, project.color)}
     `,
@@ -410,9 +410,9 @@ function moduleLanguageArtwork(languages) {
   };
   const total =
     languages.reduce((sum, language) => sum + Number(language.bytes), 0) || 1;
-  const barX = 522;
-  const barY = 83;
-  const barWidth = 370;
+  const barX = 48;
+  const barY = 72;
+  const barWidth = 832;
   let segmentX = barX;
 
   const segments = languages
@@ -421,13 +421,13 @@ function moduleLanguageArtwork(languages) {
         index === languages.length - 1
           ? barX + barWidth - segmentX
           : Math.max(3, (Number(language.bytes) / total) * barWidth);
-      const segment = `<rect x="${segmentX.toFixed(2)}" y="${barY}" width="${width.toFixed(2)}" height="10" rx="5" fill="${palette[index]}"/>`;
+      const segment = `<rect x="${segmentX.toFixed(2)}" y="${barY}" width="${width.toFixed(2)}" height="14" rx="7" fill="${palette[index]}"/>`;
       segmentX += width;
       return segment;
     })
     .join("");
 
-  let legendX = 524;
+  let legendX = 52;
   const legend = languages
     .map((language, index) => {
       const shortName =
@@ -435,9 +435,9 @@ function moduleLanguageArtwork(languages) {
         (language.name.length > 10
           ? `${language.name.slice(0, 9)}…`
           : language.name);
-      const item = `<circle cx="${legendX}" cy="119" r="4" fill="${palette[index]}"/>
-        <text x="${legendX + 10}" y="123" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="11" font-weight="600">${escapeXml(shortName)}</text>`;
-      legendX += Math.max(60, shortName.length * 7 + 24);
+      const item = `<circle cx="${legendX}" cy="119" r="5" fill="${palette[index]}"/>
+        <text x="${legendX + 13}" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">${escapeXml(shortName)}</text>`;
+      legendX += Math.max(105, shortName.length * 9 + 34);
       return item;
     })
     .join("");
@@ -518,64 +518,83 @@ function renderModules(baseImage, stats) {
     `,
   });
 
-  const profilePanel = svgDocument({
+  const profileIntro = svgDocument({
     width: 928,
-    height: 202,
-    title: "Profile summary",
+    height: 224,
+    title: "Profile introduction",
     description:
-      "Autonomous systems engineer focused on driving, reinforcement learning, VLM systems, robotics and applied neural networks.",
+      "Autonomous systems engineer building intelligent and reliable real-world vehicle solutions.",
     body: `
-      ${panelBackdrop(928, 202)}
+      ${panelBackdrop(928, 224)}
       ${croppedArtwork(embeddedImage, {
         cropX: 156,
         cropY: 238,
         cropWidth: 112,
         cropHeight: 110,
-        x: 24,
-        y: 39,
-        width: 126,
-        height: 126,
+        x: 28,
+        y: 46,
+        width: 140,
+        height: 140,
         fit: "xMidYMid meet",
       })}
       ${croppedArtwork(embeddedImage, {
-        cropX: 790,
-        cropY: 226,
-        cropWidth: 268,
-        cropHeight: 132,
-        x: 682,
-        y: 27,
-        width: 226,
-        height: 150,
+        cropX: 815,
+        cropY: 244,
+        cropWidth: 235,
+        cropHeight: 108,
+        x: 700,
+        y: 54,
+        width: 205,
+        height: 130,
         fit: "xMidYMid meet",
       })}
-      <text x="174" y="38" class="mono">I build autonomous systems from <tspan fill="#36d6ff">simulation to real world.</tspan></text>
-      <text x="174" y="62" class="copy">My work combines AI, planning, control and vehicle integration</text>
-      <text x="174" y="84" class="copy">to create intelligent, reliable autonomous solutions.</text>
-      <line x1="174" y1="101" x2="657" y2="101" stroke="url(#cyan-line)"/>
+      <text x="192" y="58" fill="#f2f7fb" font-family="Cascadia Mono,Consolas,monospace" font-size="20" font-weight="700">I build autonomous systems</text>
+      <text x="192" y="88" fill="#36d6ff" font-family="Cascadia Mono,Consolas,monospace" font-size="20" font-weight="700">from simulation to the real world.</text>
+      <line x1="192" y1="108" x2="650" y2="108" stroke="url(#cyan-line)"/>
+      <text x="192" y="137" fill="#c7d2de" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="16">My work combines artificial intelligence, planning, control</text>
+      <text x="192" y="163" fill="#c7d2de" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="16">and vehicle integration to create intelligent, reliable</text>
+      <text x="192" y="189" fill="#c7d2de" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="16">autonomous solutions for complex real-world environments.</text>
+    `,
+  });
 
-      <g transform="translate(174 119)">
-        <circle cx="8" cy="8" r="7" fill="none" stroke="#3aa5eb" stroke-width="2"/>
-        <text x="24" y="8" fill="#3aa5eb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="10" font-weight="700">FOCUS</text>
-        <text x="24" y="28" class="muted">Autonomous Driving</text>
-        <text x="24" y="45" class="muted">Reinforcement Learning</text>
+  const focusAreas = svgDocument({
+    width: 928,
+    height: 168,
+    title: "Focus areas",
+    description:
+      "Autonomous driving, reinforcement learning, VLM systems, explainable AI, robotics, applied neural networks and robot applications.",
+    body: `
+      ${panelBackdrop(928, 168)}
+      <text x="18" y="27" class="heading">FOCUS AREAS</text>
+      <line x1="148" y1="22" x2="910" y2="22" stroke="url(#cyan-line)"/>
+
+      <g transform="translate(30 51)">
+        <rect width="202" height="96" rx="9" fill="#06111e" stroke="#19354d"/>
+        <circle cx="28" cy="31" r="11" fill="none" stroke="#3aa5eb" stroke-width="3"/>
+        <text x="52" y="29" fill="#3aa5eb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">AUTONOMOUS DRIVING</text>
+        <text x="52" y="55" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Motion planning</text>
+        <text x="52" y="77" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Reinforcement learning</text>
       </g>
-      <g transform="translate(303 119)">
-        <circle cx="8" cy="8" r="7" fill="none" stroke="#9a6bff" stroke-width="2"/>
-        <text x="24" y="8" fill="#9a6bff" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="10" font-weight="700">INTEREST</text>
-        <text x="24" y="28" class="muted">VLM / VLA Systems</text>
-        <text x="24" y="45" class="muted">Explainable AI</text>
+      <g transform="translate(252 51)">
+        <rect width="202" height="96" rx="9" fill="#06111e" stroke="#19354d"/>
+        <circle cx="28" cy="31" r="11" fill="none" stroke="#9a6bff" stroke-width="3"/>
+        <text x="52" y="29" fill="#9a6bff" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">VLM / VLA SYSTEMS</text>
+        <text x="52" y="55" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Multimodal agents</text>
+        <text x="52" y="77" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Explainable AI</text>
       </g>
-      <g transform="translate(430 119)">
-        <circle cx="8" cy="8" r="7" fill="none" stroke="#27d9a0" stroke-width="2"/>
-        <text x="24" y="8" fill="#27d9a0" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="10" font-weight="700">PASSION</text>
-        <text x="24" y="28" class="muted">Robotics</text>
-        <text x="24" y="45" class="muted">Intelligent Systems</text>
+      <g transform="translate(474 51)">
+        <rect width="202" height="96" rx="9" fill="#06111e" stroke="#19354d"/>
+        <circle cx="28" cy="31" r="11" fill="none" stroke="#27d9a0" stroke-width="3"/>
+        <text x="52" y="29" fill="#27d9a0" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">ROBOTICS</text>
+        <text x="52" y="55" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Control systems</text>
+        <text x="52" y="77" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Intelligent systems</text>
       </g>
-      <g transform="translate(552 119)">
-        <rect x="1" y="1" width="14" height="14" rx="2" fill="none" stroke="#3aa5eb" stroke-width="2"/>
-        <text x="24" y="8" fill="#3aa5eb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="10" font-weight="700">ACADEMIC</text>
-        <text x="24" y="28" class="muted">Applied Neural Nets</text>
-        <text x="24" y="45" class="muted">Robot Applications</text>
+      <g transform="translate(696 51)">
+        <rect width="202" height="96" rx="9" fill="#06111e" stroke="#19354d"/>
+        <rect x="17" y="20" width="22" height="22" rx="4" fill="none" stroke="#f29a38" stroke-width="3"/>
+        <text x="52" y="29" fill="#f29a38" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">ACADEMIC</text>
+        <text x="52" y="55" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Applied neural nets</text>
+        <text x="52" y="77" fill="#d4dee8" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14">Robot applications</text>
       </g>
     `,
   });
@@ -639,14 +658,14 @@ function renderModules(baseImage, stats) {
     },
   ];
 
-  const techStack = svgDocument({
+  const techLogos = svgDocument({
     width: 928,
-    height: 138,
-    title: "Technology stack",
+    height: 166,
+    title: "Technology logos",
     description:
-      "Python, C++, ROS, MATLAB, Docker, Git, Linux and Ubuntu tooling.",
+      "Python, C++, ROS, MATLAB, Docker, Git, Linux and Ubuntu technology logos.",
     body: `
-      ${panelBackdrop(928, 138)}
+      ${panelBackdrop(928, 166)}
       <text x="18" y="25" class="heading">TECH STACK</text>
       <line x1="142" y1="20" x2="910" y2="20" stroke="url(#cyan-line)"/>
       ${croppedArtwork(embeddedImage, {
@@ -654,53 +673,83 @@ function renderModules(baseImage, stats) {
         cropY: 520,
         cropWidth: 360,
         cropHeight: 56,
-        x: 28,
+        x: 70,
         y: 43,
-        width: 570,
-        height: 88,
+        width: 788,
+        height: 108,
         fit: "xMidYMid meet",
       })}
-      <line x1="620" y1="45" x2="620" y2="119" stroke="#19354d"/>
-      <text x="650" y="57" fill="#36d6ff" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.6">CORE TOOLING</text>
-      <text x="650" y="82" class="copy">Python  •  C++  •  ROS</text>
-      <text x="650" y="103" class="copy">MATLAB  •  Docker  •  Git</text>
-      <text x="650" y="124" class="copy">Linux  •  Ubuntu</text>
     `,
   });
 
-  const githubStats = svgDocument({
+  const toolingDetails = svgDocument({
     width: 928,
-    height: 166,
-    title: "Live GitHub statistics",
+    height: 134,
+    title: "Core tooling",
+    description:
+      "Programming languages, autonomous systems tools, simulation environments and development platforms.",
+    body: `
+      ${panelBackdrop(928, 134)}
+      <text x="18" y="25" class="heading">CORE TOOLING</text>
+      <line x1="162" y1="20" x2="910" y2="20" stroke="url(#cyan-line)"/>
+      <g transform="translate(24 45)">
+        <rect width="276" height="70" rx="9" fill="#06111e" stroke="#19354d"/>
+        <text x="20" y="26" fill="#36d6ff" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">LANGUAGES</text>
+        <text x="20" y="53" fill="#e0e8ef" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="15">Python  •  C++  •  C  •  Bash</text>
+      </g>
+      <g transform="translate(326 45)">
+        <rect width="276" height="70" rx="9" fill="#06111e" stroke="#19354d"/>
+        <text x="20" y="26" fill="#9a6bff" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">AUTONOMY &amp; SIMULATION</text>
+        <text x="20" y="53" fill="#e0e8ef" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="15">ROS  •  CARLA  •  MATLAB</text>
+      </g>
+      <g transform="translate(628 45)">
+        <rect width="276" height="70" rx="9" fill="#06111e" stroke="#19354d"/>
+        <text x="20" y="26" fill="#27d9a0" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="13" font-weight="700">PLATFORM</text>
+        <text x="20" y="53" fill="#e0e8ef" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="15">Docker  •  Git  •  Linux  •  Ubuntu</text>
+      </g>
+    `,
+  });
+
+  const statsMetrics = svgDocument({
+    width: 928,
+    height: 190,
+    title: "Live GitHub metrics",
     description: `${stats.stars} stars, ${stats.commits} authored commits and ${stats.repositories} public repositories.`,
     body: `
-      ${panelBackdrop(928, 166)}
-      <text x="18" y="25" class="heading">GITHUB STATS</text>
-      <line x1="162" y1="20" x2="910" y2="20" stroke="url(#cyan-line)"/>
+      ${panelBackdrop(928, 190)}
+      <text x="18" y="27" class="heading">LIVE GITHUB METRICS</text>
+      <line x1="224" y1="22" x2="910" y2="22" stroke="url(#cyan-line)"/>
+      <g transform="translate(18 50)">
+        <rect width="285" height="116" rx="10" fill="#06111e" stroke="#19354d"/>
+        <text x="28" y="48" fill="#9a6bff" font-size="34">★</text>
+        <text x="78" y="38" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="700">TOTAL STARS</text>
+        <text x="78" y="89" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="43" font-weight="700">${stars}</text>
+      </g>
+      <g transform="translate(322 50)">
+        <rect width="285" height="116" rx="10" fill="#06111e" stroke="#19354d"/>
+        <text x="28" y="48" fill="#3aa5eb" font-size="34">⌁</text>
+        <text x="78" y="38" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="700">TOTAL COMMITS</text>
+        <text x="78" y="89" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="43" font-weight="700">${commits}</text>
+      </g>
+      <g transform="translate(626 50)">
+        <rect width="284" height="116" rx="10" fill="#06111e" stroke="#19354d"/>
+        <text x="28" y="48" fill="#c16cff" font-size="34">▣</text>
+        <text x="78" y="38" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="700">REPOSITORIES</text>
+        <text x="78" y="89" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="43" font-weight="700">${repositories}</text>
+      </g>
+    `,
+  });
 
-      <g transform="translate(20 44)">
-        <rect width="145" height="102" rx="9" fill="#06111e" stroke="#19354d"/>
-        <text x="18" y="34" fill="#9a6bff" font-size="26">★</text>
-        <text x="52" y="28" class="muted">TOTAL STARS</text>
-        <text x="52" y="72" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="31" font-weight="700">${stars}</text>
-      </g>
-      <g transform="translate(177 44)">
-        <rect width="145" height="102" rx="9" fill="#06111e" stroke="#19354d"/>
-        <text x="18" y="34" fill="#3aa5eb" font-size="26">⌁</text>
-        <text x="52" y="28" class="muted">TOTAL COMMITS</text>
-        <text x="52" y="72" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="31" font-weight="700">${commits}</text>
-      </g>
-      <g transform="translate(334 44)">
-        <rect width="145" height="102" rx="9" fill="#06111e" stroke="#19354d"/>
-        <text x="18" y="34" fill="#c16cff" font-size="26">▣</text>
-        <text x="52" y="28" class="muted">REPOSITORIES</text>
-        <text x="52" y="72" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="31" font-weight="700">${repositories}</text>
-      </g>
-      <g>
-        <rect x="491" y="44" width="417" height="102" rx="9" fill="#06111e" stroke="#19354d"/>
-        <text x="522" y="69" class="muted">TOP LANGUAGES</text>
-        ${moduleLanguageArtwork(stats.languages)}
-      </g>
+  const languageStats = svgDocument({
+    width: 928,
+    height: 150,
+    title: "Live GitHub language distribution",
+    description: "Top programming languages calculated from public repository byte counts.",
+    body: `
+      ${panelBackdrop(928, 150)}
+      <text x="18" y="27" class="heading">TOP LANGUAGES</text>
+      <line x1="174" y1="22" x2="910" y2="22" stroke="url(#cyan-line)"/>
+      ${moduleLanguageArtwork(stats.languages)}
     `,
   });
 
@@ -745,14 +794,17 @@ function renderModules(baseImage, stats) {
   return new Map([
     ["banner.svg", banner],
     ["role-strip.svg", roleStrip],
-    ["profile-panel.svg", profilePanel],
+    ["profile-intro.svg", profileIntro],
+    ["focus-areas.svg", focusAreas],
     ["projects-heading.svg", projectsHeading],
     ...projects.map((project) => [
       project.filename,
       projectModule(embeddedImage, project),
     ]),
-    ["tech-stack.svg", techStack],
-    ["github-stats.svg", githubStats],
+    ["tech-logos.svg", techLogos],
+    ["tooling-details.svg", toolingDetails],
+    ["stats-metrics.svg", statsMetrics],
+    ["language-stats.svg", languageStats],
     ["footer-github.svg", footerGithub],
     ["footer-linkedin.svg", footerLinkedin],
     ["footer-tagline.svg", footerTagline],

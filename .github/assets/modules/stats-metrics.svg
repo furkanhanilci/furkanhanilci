@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="928" height="190" viewBox="0 0 928 190" role="img" aria-labelledby="title description">
+  <title id="title">Live GitHub metrics</title>
+  <desc id="description">24 stars, 270 authored commits and 23 public repositories.</desc>
+  <defs>
+    <linearGradient id="panel-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020a14"/>
+      <stop offset="1" stop-color="#071421"/>
+    </linearGradient>
+    <linearGradient id="cyan-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36d6ff"/>
+      <stop offset="1" stop-color="#16324a"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .heading {
+      fill: #36d6ff;
+      font: 700 13px "Segoe UI", Inter, Arial, sans-serif;
+      letter-spacing: 2.2px;
+    }
+    .title {
+      fill: #f2f7fb;
+      font: 700 18px "Segoe UI", Inter, Arial, sans-serif;
+    }
+    .copy {
+      fill: #c7d2de;
+      font: 500 13px "Segoe UI", Inter, Arial, sans-serif;
+    }
+    .muted {
+      fill: #91a1b3;
+      font: 600 11px "Segoe UI", Inter, Arial, sans-serif;
+    }
+    .mono {
+      fill: #d8e5ef;
+      font: 500 14px "Cascadia Mono", "Segoe UI Mono", Consolas, monospace;
+      letter-spacing: 0.25px;
+    }
+  </style>
+
+      <rect x="1" y="1" width="926" height="188" rx="10" fill="url(#panel-bg)" stroke="#19354d"/>
+      <text x="18" y="27" class="heading">LIVE GITHUB METRICS</text>
+      <line x1="224" y1="22" x2="910" y2="22" stroke="url(#cyan-line)"/>
+      <g transform="translate(18 50)">
+        <rect width="285" height="116" rx="10" fill="#06111e" stroke="#19354d"/>
+        <text x="28" y="48" fill="#9a6bff" font-size="34">★</text>
+        <text x="78" y="38" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="700">TOTAL STARS</text>
+        <text x="78" y="89" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="43" font-weight="700">24</text>
+      </g>
+      <g transform="translate(322 50)">
+        <rect width="285" height="116" rx="10" fill="#06111e" stroke="#19354d"/>
+        <text x="28" y="48" fill="#3aa5eb" font-size="34">⌁</text>
+        <text x="78" y="38" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="700">TOTAL COMMITS</text>
+        <text x="78" y="89" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="43" font-weight="700">270</text>
+      </g>
+      <g transform="translate(626 50)">
+        <rect width="284" height="116" rx="10" fill="#06111e" stroke="#19354d"/>
+        <text x="28" y="48" fill="#c16cff" font-size="34">▣</text>
+        <text x="78" y="38" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="700">REPOSITORIES</text>
+        <text x="78" y="89" fill="#f2f7fb" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="43" font-weight="700">23</text>
+      </g>
+
+</svg>
