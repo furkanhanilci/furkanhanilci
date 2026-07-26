@@ -6,6 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const assetsDirectory = path.join(root, ".github", "assets");
 const modulesDirectory = path.join(assetsDirectory, "modules");
 const baseImagePath = path.join(assetsDirectory, "profile-dashboard-base.png");
+const bannerImagePath = path.join(assetsDirectory, "profile-banner-hq.png");
 const outputSvgPath = path.join(assetsDirectory, "profile-dashboard.svg");
 const outputStatsPath = path.join(assetsDirectory, "profile-stats.json");
 
@@ -445,8 +446,9 @@ function moduleLanguageArtwork(languages) {
   return `${segments}${legend}`;
 }
 
-function renderModules(baseImage, stats) {
+function renderModules(baseImage, bannerImage, stats) {
   const embeddedImage = `data:image/png;base64,${baseImage.toString("base64")}`;
+  const embeddedBannerImage = `data:image/png;base64,${bannerImage.toString("base64")}`;
   const stars = escapeXml(compactNumber(stats.stars));
   const commits = escapeXml(compactNumber(stats.commits));
   const repositories = escapeXml(compactNumber(stats.repositories));
@@ -457,16 +459,7 @@ function renderModules(baseImage, stats) {
     title: "Autonomous vehicle visual",
     description: "Futuristic autonomous vehicle artwork.",
     body: `
-      ${croppedArtwork(embeddedImage, {
-        cropX: 450,
-        cropY: 9,
-        cropWidth: 620,
-        cropHeight: 161,
-        x: 0,
-        y: 0,
-        width: 928,
-        height: 161,
-      })}
+      <image x="0" y="0" width="928" height="161" preserveAspectRatio="xMidYMid slice" href="${embeddedBannerImage}"/>
     `,
   });
 
@@ -786,11 +779,12 @@ function renderModules(baseImage, stats) {
 }
 
 await mkdir(modulesDirectory, { recursive: true });
-const [baseImage, stats] = await Promise.all([
+const [baseImage, bannerImage, stats] = await Promise.all([
   readFile(baseImagePath),
+  readFile(bannerImagePath),
   collectStats(),
 ]);
-const modules = renderModules(baseImage, stats);
+const modules = renderModules(baseImage, bannerImage, stats);
 
 await Promise.all([
   writeFile(outputSvgPath, renderSvg(baseImage, stats), "utf8"),
