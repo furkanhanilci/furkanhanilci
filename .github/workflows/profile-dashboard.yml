@@ -1,0 +1,46 @@
+name: Refresh profile dashboard
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/assets/profile-dashboard-base.png"
+      - "scripts/render-profile.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-dashboard
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Render dashboard with current GitHub data
+        run: node scripts/render-profile.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit refreshed assets
+        run: |
+          if git diff --quiet -- .github/assets/profile-dashboard.svg .github/assets/profile-stats.json; then
+            echo "Dashboard is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/assets/profile-dashboard.svg .github/assets/profile-stats.json
+          git commit -m "chore: refresh profile dashboard"
+          git push

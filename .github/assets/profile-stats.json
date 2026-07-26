@@ -1,0 +1,28 @@
+{
+  "username": "furkanhanilci",
+  "stars": 150,
+  "commits": 1200,
+  "repositories": 23,
+  "languages": [
+    {
+      "name": "Python",
+      "bytes": 47
+    },
+    {
+      "name": "C++",
+      "bytes": 25
+    },
+    {
+      "name": "C",
+      "bytes": 10
+    },
+    {
+      "name": "MATLAB",
+      "bytes": 9
+    },
+    {
+      "name": "Others",
+      "bytes": 9
+    }
+  ]
+}
