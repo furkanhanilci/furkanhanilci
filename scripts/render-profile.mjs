@@ -454,45 +454,19 @@ function renderModules(baseImage, stats) {
   const banner = svgDocument({
     width: 928,
     height: 161,
-    title: "Autonomous Systems",
-    description: "AI, robotics and intelligent driving banner.",
+    title: "Autonomous vehicle visual",
+    description: "Futuristic autonomous vehicle artwork.",
     body: `
       ${croppedArtwork(embeddedImage, {
-        cropX: 136,
+        cropX: 450,
         cropY: 9,
-        cropWidth: 928,
+        cropWidth: 620,
         cropHeight: 161,
         x: 0,
         y: 0,
         width: 928,
         height: 161,
       })}
-      <style>
-        @keyframes hero-pulse {
-          0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px #36d6ff); }
-          50% { opacity: 0.58; filter: drop-shadow(0 0 11px #36d6ff); }
-        }
-        @keyframes hero-drift {
-          0%, 100% { transform: translateX(0); }
-          50% { transform: translateX(12px); }
-        }
-        @keyframes cursor-blink {
-          0%, 46% { opacity: 1; }
-          47%, 100% { opacity: 0; }
-        }
-        .hero-title {
-          animation: hero-pulse 2.6s ease-in-out infinite, hero-drift 7s ease-in-out infinite;
-        }
-        .hero-cursor {
-          animation: cursor-blink 1s steps(1, end) infinite;
-        }
-      </style>
-      <rect x="22" y="48" width="440" height="72" rx="8" fill="#020a14" fill-opacity="0.96" stroke="#16324a"/>
-      <g class="hero-title">
-        <text x="42" y="82" fill="#f2f7fb" font-family="Cascadia Mono,Consolas,monospace" font-size="22" font-weight="700" letter-spacing="5">AUTONOMOUS SYSTEMS</text>
-        <text x="43" y="107" fill="#b8c9d8" font-family="Cascadia Mono,Consolas,monospace" font-size="11" letter-spacing="2.4">AI  •  ROBOTICS  •  INTELLIGENT DRIVING</text>
-      </g>
-      <rect class="hero-cursor" x="432" y="64" width="4" height="22" rx="2" fill="#36d6ff"/>
     `,
   });
 
@@ -510,7 +484,7 @@ function renderModules(baseImage, stats) {
       <path d="M28 30l8-8m-8 8l8 8M900 30l-8-8m8 8l-8 8" fill="none" stroke="#36d6ff" stroke-width="2" stroke-linecap="round"/>
       <g clip-path="url(#role-clip)">
         <text x="70" y="36" class="mono" font-size="16">
-          Autonomous Vehicle Engineer  •  Technical Lead  •  AI Researcher  •  Lecturer
+          Autonomous Vehicle Development Engineer  •  Technical Lead  •  AI Researcher  •  Lecturer
           <animate attributeName="x" values="70;170;70" dur="8s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="1;0.62;1" dur="2.2s" repeatCount="indefinite"/>
         </text>
