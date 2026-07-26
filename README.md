@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/furkanhanilci">
-    <img src="./.github/assets/modules/banner.svg" width="100%" alt="Autonomous Systems — AI, Robotics and Intelligent Driving" />
+    <img src="./.github/assets/modules/banner.svg" width="100%" alt="Futuristic autonomous vehicle" />
   </a>
   <br />
   <img src="./.github/assets/modules/role-strip.svg" width="100%" alt="Autonomous Vehicle Development Engineer, Technical Lead, AI Researcher and Lecturer" />

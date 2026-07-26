@@ -44,7 +44,7 @@
       <path d="M28 30l8-8m-8 8l8 8M900 30l-8-8m8 8l-8 8" fill="none" stroke="#36d6ff" stroke-width="2" stroke-linecap="round"/>
       <g clip-path="url(#role-clip)">
         <text x="70" y="36" class="mono" font-size="16">
-          Autonomous Vehicle Engineer  •  Technical Lead  •  AI Researcher  •  Lecturer
+          Autonomous Vehicle Development Engineer  •  Technical Lead  •  AI Researcher  •  Lecturer
           <animate attributeName="x" values="70;170;70" dur="8s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="1;0.62;1" dur="2.2s" repeatCount="indefinite"/>
         </text>
