@@ -21,12 +21,12 @@
     <text x="566" y="562" class="value">24</text>
 
     <rect x="656" y="546" width="51" height="21" rx="2" fill="#07111c"/>
-    <text x="660" y="562" class="value">282</text>
+    <text x="660" y="562" class="value">283</text>
 
     <rect x="750" y="546" width="53" height="21" rx="2" fill="#07111c"/>
     <text x="754" y="562" class="value">23</text>
 
     <rect x="829" y="543" width="216" height="31" rx="3" fill="#07111c"/>
-    <rect x="832.00" y="547" width="146.05" height="5" rx="2.5" fill="#3aa5eb"/><rect x="978.05" y="547" width="34.88" height="5" rx="2.5" fill="#e94b9a"/><rect x="1012.93" y="547" width="16.57" height="5" rx="2.5" fill="#8d60d8"/><rect x="1029.50" y="547" width="3.80" height="5" rx="2.5" fill="#f29a38"/><rect x="1033.31" y="547" width="2.69" height="5" rx="2.5" fill="#96a1ad"/><circle cx="834" cy="567" r="2.5" fill="#3aa5eb"/><text x="841" y="570" class="legend">Python</text><circle cx="877.2" cy="567" r="2.5" fill="#e94b9a"/><text x="884.2" y="570" class="legend">Jupyter</text><circle cx="925.1" cy="567" r="2.5" fill="#8d60d8"/><text x="932.1" y="570" class="legend">C++</text><circle cx="959.1" cy="567" r="2.5" fill="#f29a38"/><text x="966.1" y="570" class="legend">Shell</text><circle cx="997.6" cy="567" r="2.5" fill="#96a1ad"/><text x="1004.6" y="570" class="legend">Others</text>
+    <rect x="832.00" y="547" width="146.17" height="5" rx="2.5" fill="#3aa5eb"/><rect x="978.17" y="547" width="34.80" height="5" rx="2.5" fill="#e94b9a"/><rect x="1012.97" y="547" width="16.54" height="5" rx="2.5" fill="#8d60d8"/><rect x="1029.51" y="547" width="3.81" height="5" rx="2.5" fill="#f29a38"/><rect x="1033.31" y="547" width="2.69" height="5" rx="2.5" fill="#96a1ad"/><circle cx="834" cy="567" r="2.5" fill="#3aa5eb"/><text x="841" y="570" class="legend">Python</text><circle cx="877.2" cy="567" r="2.5" fill="#e94b9a"/><text x="884.2" y="570" class="legend">Jupyter</text><circle cx="925.1" cy="567" r="2.5" fill="#8d60d8"/><text x="932.1" y="570" class="legend">C++</text><circle cx="959.1" cy="567" r="2.5" fill="#f29a38"/><text x="966.1" y="570" class="legend">Shell</text><circle cx="997.6" cy="567" r="2.5" fill="#96a1ad"/><text x="1004.6" y="570" class="legend">Others</text>
   </g>
 </svg>
