@@ -7,6 +7,7 @@ const assetsDirectory = path.join(root, ".github", "assets");
 const modulesDirectory = path.join(assetsDirectory, "modules");
 const baseImagePath = path.join(assetsDirectory, "profile-dashboard-base.png");
 const bannerImagePath = path.join(assetsDirectory, "profile-banner-hq.png");
+const aethrionLogoPath = path.join(assetsDirectory, "aethrion-logo.png");
 const outputSvgPath = path.join(assetsDirectory, "profile-dashboard.svg");
 const outputStatsPath = path.join(assetsDirectory, "profile-stats.json");
 
@@ -368,15 +369,23 @@ function tagBadges(tags, color) {
     .join("");
 }
 
-function projectModule(embeddedImage, project) {
-  const icon = croppedArtwork(embeddedImage, {
-    ...project.icon,
-    x: 26,
-    y: 45,
-    width: 112,
-    height: 112,
-    fit: "xMidYMid meet",
-  });
+function standaloneArtwork(embeddedImage, { x, y, width, height }) {
+  return `<image x="${x}" y="${y}" width="${width}" height="${height}" href="${embeddedImage}" preserveAspectRatio="xMidYMid meet"/>`;
+}
+
+function projectModule(embeddedImage, project, logos = {}) {
+  // Most cards crop their icon out of the shared dashboard artwork. A project
+  // with its own logo supplies `logoKey` instead and gets the image whole, so
+  // its identity is not a rectangle sampled from someone else's picture.
+  const box = { x: 26, y: 45, width: 112, height: 112 };
+  const logo = project.logoKey ? logos[project.logoKey] : undefined;
+  const icon = logo
+    ? standaloneArtwork(logo, box)
+    : croppedArtwork(embeddedImage, {
+        ...project.icon,
+        ...box,
+        fit: "xMidYMid meet",
+      });
   const lines = project.description
     .map(
       (line, index) =>
@@ -446,9 +455,12 @@ function moduleLanguageArtwork(languages) {
   return `${segments}${legend}`;
 }
 
-function renderModules(baseImage, bannerImage, stats) {
+function renderModules(baseImage, bannerImage, aethrionLogo, stats) {
   const embeddedImage = `data:image/png;base64,${baseImage.toString("base64")}`;
   const embeddedBannerImage = `data:image/png;base64,${bannerImage.toString("base64")}`;
+  const projectLogos = {
+    aethrion: `data:image/png;base64,${aethrionLogo.toString("base64")}`,
+  };
   const stars = escapeXml(compactNumber(stats.stars));
   const commits = escapeXml(compactNumber(stats.commits));
   const repositories = escapeXml(compactNumber(stats.repositories));
@@ -580,6 +592,17 @@ function renderModules(baseImage, bannerImage, stats) {
 
   const projects = [
     {
+      filename: "project-aethrion.svg",
+      title: "AETHRION",
+      description: [
+        "Agentic Intelligence Research Layer: agents produce,",
+        "machines verify, humans decide \u2014 evidence-centred research.",
+      ],
+      tags: ["AGENTIC AI", "EVIDENCE", "GOVERNANCE", "RESEARCH"],
+      color: "#ff2f4a",
+      logoKey: "aethrion",
+    },
+    {
       filename: "project-neovlm.svg",
       title: "NeoVLM",
       description: [
@@ -589,17 +612,6 @@ function renderModules(baseImage, bannerImage, stats) {
       tags: ["VLM", "RL", "CARLA", "AUTONOMY"],
       color: "#36d6ff",
       icon: { cropX: 154, cropY: 400, cropWidth: 62, cropHeight: 62 },
-    },
-    {
-      filename: "project-morpheus.svg",
-      title: "Morpheus AI",
-      description: [
-        "Multimodal, agentic AI assistant with",
-        "memory, tools and workflow automation.",
-      ],
-      tags: ["AGENTIC AI", "LLM", "MULTIMODAL"],
-      color: "#a36bff",
-      icon: { cropX: 382, cropY: 400, cropWidth: 64, cropHeight: 62 },
     },
     {
       filename: "project-ann.svg",
@@ -766,7 +778,7 @@ function renderModules(baseImage, bannerImage, stats) {
     ["projects-heading.svg", projectsHeading],
     ...projects.map((project) => [
       project.filename,
-      projectModule(embeddedImage, project),
+      projectModule(embeddedImage, project, projectLogos),
     ]),
     ["tech-logos.svg", techLogos],
     ["tooling-details.svg", toolingDetails],
@@ -779,12 +791,13 @@ function renderModules(baseImage, bannerImage, stats) {
 }
 
 await mkdir(modulesDirectory, { recursive: true });
-const [baseImage, bannerImage, stats] = await Promise.all([
+const [baseImage, bannerImage, aethrionLogo, stats] = await Promise.all([
   readFile(baseImagePath),
   readFile(bannerImagePath),
+  readFile(aethrionLogoPath),
   collectStats(),
 ]);
-const modules = renderModules(baseImage, bannerImage, stats);
+const modules = renderModules(baseImage, bannerImage, aethrionLogo, stats);
 
 await Promise.all([
   writeFile(outputSvgPath, renderSvg(baseImage, stats), "utf8"),

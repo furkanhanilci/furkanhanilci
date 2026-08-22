@@ -9,26 +9,26 @@
   <br />
   <img src="./.github/assets/modules/focus-areas.svg" width="100%" alt="Autonomous driving, reinforcement learning, VLM systems, robotics and applied neural networks" />
   <br />
-  <img src="./.github/assets/modules/projects-heading.svg" width="100%" alt="Selected projects" />
+  <img src="./.github/assets/modules/projects-heading.svg" width="100%" alt="Selected projects heading" />
   <br />
-  <a href="https://github.com/furkanhanilci/NeoVLM">
-    <img src="./.github/assets/modules/project-neovlm.svg" width="100%" alt="NeoVLM project" />
+  <a href="https://github.com/furkanhanilci/AETHRION">
+    <img src="./.github/assets/modules/project-aethrion.svg" width="100%" alt="AETHRION, the Agentic Intelligence Research Layer: an evidence-centred research system in which agents produce, machines verify and humans decide" />
   </a>
   <br />
-  <a href="https://github.com/furkanhanilci/Personal-AI-Assistant">
-    <img src="./.github/assets/modules/project-morpheus.svg" width="100%" alt="Morpheus AI project" />
+  <a href="https://github.com/furkanhanilci/NeoVLM">
+    <img src="./.github/assets/modules/project-neovlm.svg" width="100%" alt="NeoVLM: closed-loop VLM-based autonomous driving with reinforcement learning, imitation learning and CARLA" />
   </a>
   <br />
   <a href="https://github.com/furkanhanilci/Applied-Neural-Networks">
-    <img src="./.github/assets/modules/project-ann.svg" width="100%" alt="Applied Neural Networks project" />
+    <img src="./.github/assets/modules/project-ann.svg" width="100%" alt="Applied Neural Networks: practical neural-network implementations, course material and deep-learning projects" />
   </a>
   <br />
   <a href="https://github.com/furkanhanilci/Robot-Design-Applications-Term-1-">
-    <img src="./.github/assets/modules/project-robot.svg" width="100%" alt="Robot Design and Applications project" />
+    <img src="./.github/assets/modules/project-robot.svg" width="100%" alt="Robot Design and Applications: educational robotics, control systems and intelligent robot application studies" />
   </a>
   <br />
   <a href="https://github.com/furkanhanilci?tab=repositories">
-    <img src="./.github/assets/modules/tech-logos.svg" width="100%" alt="Technology logos" />
+    <img src="./.github/assets/modules/tech-logos.svg" width="100%" alt="Tech stack: Python, C++, ROS, MATLAB, Docker, Git, Linux and Ubuntu" />
   </a>
   <br />
   <img src="./.github/assets/modules/tooling-details.svg" width="100%" alt="Programming languages, autonomy tools and development platforms" />
