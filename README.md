@@ -41,6 +41,10 @@
     <img src="./.github/assets/modules/language-stats.svg" width="100%" alt="Live GitHub language distribution" />
   </a>
   <br />
+  <a href="https://github.com/furkanhanilci?tab=overview">
+    <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="Three-dimensional contribution graph for the last twelve months, with a commit, issue, pull request, review and repository breakdown" />
+  </a>
+  <br />
   <a href="https://github.com/furkanhanilci">
     <img src="./.github/assets/modules/footer-github.svg" width="31%" alt="Furkan Hanilçi on GitHub" />
   </a>

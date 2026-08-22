@@ -15,6 +15,8 @@ README.md
 .github/assets/profile-stats.json
 .github/assets/modules/*.svg
 .github/workflows/profile-dashboard.yml
+.github/workflows/main.yml
+profile-3d-contrib/*.svg
 scripts/render-profile.mjs
 ```
 
@@ -46,6 +48,14 @@ colour, and gets its 112×112 icon one of two ways:
 **Do not edit `modules/project-*.svg` by hand.** The refresh workflow rewrites
 every module from the generator, so a hand edit survives at most six hours.
 Change the generator, then run the local preview below.
+
+## Contribution graph
+
+`.github/workflows/main.yml` regenerates `profile-3d-contrib/*.svg` daily with
+`yoshi389111/github-profile-3d-contrib`. `README.md` displays
+`profile-night-rainbow.svg`; the other nine variants are produced by the same
+action and kept as alternatives — swap the filename in `README.md` to change
+the look. Nothing in this repository renders them, so do not hand-edit them.
 
 ## Automatic refresh
 
