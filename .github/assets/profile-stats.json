@@ -1,12 +1,12 @@
 {
   "username": "furkanhanilci",
   "stars": 24,
-  "commits": 284,
+  "commits": 285,
   "repositories": 24,
   "languages": [
     {
       "name": "Python",
-      "bytes": 3861235
+      "bytes": 3895458
     },
     {
       "name": "Jupyter Notebook",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Others",
-      "bytes": 111177
+      "bytes": 112048
     }
   ]
 }
