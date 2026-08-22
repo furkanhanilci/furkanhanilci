@@ -6,7 +6,7 @@
   "languages": [
     {
       "name": "Python",
-      "bytes": 3692332
+      "bytes": 3741758
     },
     {
       "name": "Jupyter Notebook",
@@ -18,11 +18,11 @@
     },
     {
       "name": "Shell",
-      "bytes": 93480
+      "bytes": 109850
     },
     {
       "name": "Others",
-      "bytes": 66057
+      "bytes": 110513
     }
   ]
 }
