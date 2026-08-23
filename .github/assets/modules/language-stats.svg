@@ -40,7 +40,7 @@
       <rect x="1" y="1" width="926" height="148" rx="10" fill="url(#panel-bg)" stroke="#19354d"/>
       <text x="18" y="27" class="heading">TOP LANGUAGES</text>
       <line x1="174" y1="22" x2="910" y2="22" stroke="url(#cyan-line)"/>
-      <rect x="48.00" y="72" width="612.75" height="14" rx="7" fill="#3aa5eb"/><rect x="660.75" y="72" width="126.39" height="14" rx="7" fill="#e94b9a"/><rect x="787.14" y="72" width="60.05" height="14" rx="7" fill="#8d60d8"/><rect x="847.20" y="72" width="16.24" height="14" rx="7" fill="#f29a38"/><rect x="863.44" y="72" width="16.56" height="14" rx="7" fill="#96a1ad"/><circle cx="52" cy="119" r="5" fill="#3aa5eb"/>
+      <rect x="48.00" y="72" width="620.76" height="14" rx="7" fill="#3aa5eb"/><rect x="668.76" y="72" width="121.78" height="14" rx="7" fill="#e94b9a"/><rect x="790.53" y="72" width="57.86" height="14" rx="7" fill="#8d60d8"/><rect x="848.40" y="72" width="15.65" height="14" rx="7" fill="#f29a38"/><rect x="864.04" y="72" width="15.96" height="14" rx="7" fill="#96a1ad"/><circle cx="52" cy="119" r="5" fill="#3aa5eb"/>
         <text x="65" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">Python</text><circle cx="157" cy="119" r="5" fill="#e94b9a"/>
         <text x="170" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">Jupyter</text><circle cx="262" cy="119" r="5" fill="#8d60d8"/>
         <text x="275" y="124" fill="#aeb8c5" font-family="Segoe UI,Inter,Arial,sans-serif" font-size="14" font-weight="600">C++</text><circle cx="367" cy="119" r="5" fill="#f29a38"/>
