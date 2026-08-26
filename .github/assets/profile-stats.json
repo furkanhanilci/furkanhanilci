@@ -1,28 +1,28 @@
 {
   "username": "furkanhanilci",
   "stars": 24,
-  "commits": 380,
-  "repositories": 26,
+  "commits": 382,
+  "repositories": 27,
   "languages": [
     {
+      "name": "Rust",
+      "bytes": 17889623
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 13332342
+    },
+    {
       "name": "Python",
-      "bytes": 5210021
+      "bytes": 5385272
     },
     {
-      "name": "Jupyter Notebook",
-      "bytes": 854996
-    },
-    {
-      "name": "C++",
-      "bytes": 406246
-    },
-    {
-      "name": "Shell",
-      "bytes": 130485
+      "name": "JavaScript",
+      "bytes": 3757787
     },
     {
       "name": "Others",
-      "bytes": 112629
+      "bytes": 1804391
     }
   ]
 }
