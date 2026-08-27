@@ -21,12 +21,12 @@
     <text x="566" y="562" class="value">24</text>
 
     <rect x="656" y="546" width="51" height="21" rx="2" fill="#07111c"/>
-    <text x="660" y="562" class="value">387</text>
+    <text x="660" y="562" class="value">391</text>
 
     <rect x="750" y="546" width="53" height="21" rx="2" fill="#07111c"/>
     <text x="754" y="562" class="value">27</text>
 
     <rect x="829" y="543" width="216" height="31" rx="3" fill="#07111c"/>
-    <rect x="832.00" y="547" width="86.48" height="5" rx="2.5" fill="#3aa5eb"/><rect x="918.48" y="547" width="64.45" height="5" rx="2.5" fill="#e94b9a"/><rect x="982.92" y="547" width="26.19" height="5" rx="2.5" fill="#8d60d8"/><rect x="1009.11" y="547" width="18.16" height="5" rx="2.5" fill="#f29a38"/><rect x="1027.27" y="547" width="8.73" height="5" rx="2.5" fill="#96a1ad"/><circle cx="834" cy="567" r="2.5" fill="#3aa5eb"/><text x="841" y="570" class="legend">Rust</text><circle cx="868" cy="567" r="2.5" fill="#e94b9a"/><text x="875" y="570" class="legend">TS</text><circle cx="902" cy="567" r="2.5" fill="#8d60d8"/><text x="909" y="570" class="legend">Python</text><circle cx="945.2" cy="567" r="2.5" fill="#f29a38"/><text x="952.2" y="570" class="legend">JS</text><circle cx="979.2" cy="567" r="2.5" fill="#96a1ad"/><text x="986.2" y="570" class="legend">Others</text>
+    <rect x="832.00" y="547" width="86.41" height="5" rx="2.5" fill="#3aa5eb"/><rect x="918.41" y="547" width="64.40" height="5" rx="2.5" fill="#e94b9a"/><rect x="982.80" y="547" width="26.33" height="5" rx="2.5" fill="#8d60d8"/><rect x="1009.13" y="547" width="18.15" height="5" rx="2.5" fill="#f29a38"/><rect x="1027.28" y="547" width="8.72" height="5" rx="2.5" fill="#96a1ad"/><circle cx="834" cy="567" r="2.5" fill="#3aa5eb"/><text x="841" y="570" class="legend">Rust</text><circle cx="868" cy="567" r="2.5" fill="#e94b9a"/><text x="875" y="570" class="legend">TS</text><circle cx="902" cy="567" r="2.5" fill="#8d60d8"/><text x="909" y="570" class="legend">Python</text><circle cx="945.2" cy="567" r="2.5" fill="#f29a38"/><text x="952.2" y="570" class="legend">JS</text><circle cx="979.2" cy="567" r="2.5" fill="#96a1ad"/><text x="986.2" y="570" class="legend">Others</text>
   </g>
 </svg>
