@@ -18,7 +18,7 @@
   <!-- Live values are painted over the matching cells in the base artwork. -->
   <g id="live-github-stats">
     <rect x="562" y="546" width="48" height="21" rx="2" fill="#07111c"/>
-    <text x="566" y="562" class="value">28</text>
+    <text x="566" y="562" class="value">29</text>
 
     <rect x="656" y="546" width="51" height="21" rx="2" fill="#07111c"/>
     <text x="660" y="562" class="value">394</text>
