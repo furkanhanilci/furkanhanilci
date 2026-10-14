@@ -1,9 +1,13 @@
 {
   "username": "furkanhanilci",
   "stars": 29,
-  "commits": 394,
+  "commits": 395,
   "repositories": 27,
   "languages": [
+    {
+      "name": "HTML",
+      "bytes": 54833065
+    },
     {
       "name": "Rust",
       "bytes": 17889623
@@ -17,12 +21,8 @@
       "bytes": 5451263
     },
     {
-      "name": "JavaScript",
-      "bytes": 3757787
-    },
-    {
       "name": "Others",
-      "bytes": 1805124
+      "bytes": 5558020
     }
   ]
 }
