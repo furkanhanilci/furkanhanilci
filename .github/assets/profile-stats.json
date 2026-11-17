@@ -1,8 +1,8 @@
 {
   "username": "furkanhanilci",
   "stars": 41,
-  "commits": 399,
-  "repositories": 27,
+  "commits": 402,
+  "repositories": 28,
   "languages": [
     {
       "name": "HTML",
@@ -18,11 +18,11 @@
     },
     {
       "name": "Python",
-      "bytes": 5451263
+      "bytes": 5575139
     },
     {
       "name": "Others",
-      "bytes": 5558020
+      "bytes": 5560306
     }
   ]
 }
